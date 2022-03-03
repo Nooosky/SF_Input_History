@@ -87,7 +87,7 @@ var setInput = (id) => {
 
 var generateLink = () => {
 
-    var link = "./layout.html?";
+    var link = "https://nooosky.github.io/SF_Input_History/layout.html?";
 
     if (inputList[0] != -1) link += "l=" + inputList[0] + "&";
     if (inputList[1] != -1) link += "u=" + inputList[1] + "&";
