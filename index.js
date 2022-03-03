@@ -106,6 +106,6 @@ var generateLink = () => {
     if (inputList[11] != -1) link += "tk=" + inputList[11] + "&";
 
     document.querySelector("#generatedLinkDiv").hidden = false;
-    document.querySelector("#tryLink").href = link.slice(0, -1);
+    document.getElementById("tryLink").href = link.slice(0, -1);
     document.querySelector("#generatedLink").value = link.slice(0, -1);
 }
