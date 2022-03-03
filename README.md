@@ -18,6 +18,6 @@ For now, only the controller which is considered the first one connected will wo
 You can send an email at this address for any question or suggestion : its.nooosky@gmail.com
 
 # One last thing...
-Hosting this service is unfortunately not free so, if you wish to help or just to thank me, you can donate here : https://ko-fi.com/nooosky
+If you wish to help or just to thank me, you can donate here : https://ko-fi.com/nooosky
 
 Thank you and have fun streaming !
