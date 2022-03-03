@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins/Poppins-SemiBold.ttf");
+    font-weight: bold;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    margin: auto;
+    padding: 2rem 0;
+    display: grid;
+    height: 100%;
+    overflow: auto;
+    max-width: 1000px;
+}
+
+#sf_logo {
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: -2rem;
+}
+
+main {
+    background-color: white;
+    padding: 1rem 2rem;
+    margin: auto;
+}
+
+#generator {
+    border: 1px solid #333;
+    padding: 1rem;
+}
+
+#generator table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+#generator table td {
+    text-align: center;
+    border: 1px solid #333;
+    gap: 0;
+    padding: .5rem 0 0 0;
+}
+
+#generator table td img {
+    border-radius: 100rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: justify;
+}
+
+#assign-btns td {
+    padding-bottom: .5rem !important;
+}
+
+#assign-btns td:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input[type=radio] + div {
+    display: none;
+}
+
+input[type=radio]:checked + div {
+    display: block;
+}
+
+input[type=text] {
+    font-size: 1rem;
+    padding: .3rem .5rem;
+    width: calc(100% - 1rem);
+    border: 1px solid #333;
+}
+
+.comment {
+    font-size: .7rem;
+    margin-top: .5rem;
+}
+
+label:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#generateBtn {
+    text-align: center;
+    padding: .3rem .5rem;
+    margin-top: 1rem;
+}
+
+#generateBtn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.right {
+    transform: rotate(-90deg);
+    border-radius: 0 !important;
+}
+
+.down {
+    transform: rotate(0);
+    border-radius: 0 !important;
+}
+
+.left {
+    transform: rotate(90deg);
+    border-radius: 0 !important;
+}
+
+.up {
+    transform: rotate(180deg);
+    border-radius: 0 !important;
+}

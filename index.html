@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Fighter Input History for Streams</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="content">
+        <main>
+            <div id="sf_logo">
+                <img src="./img/sf_logo.png" alt="Street Fighter">
+            </div>
+            <h1>Inputs History for Streams</h1>
+
+            <h2>Integration link</h2>
+            <div id="generator">
+
+                <input id="PS4" type="radio" name="controllerType" checked hidden>
+                <div>
+                    <label for="PS4"><b>PS4 Controller</b></label> |
+                    <label for="custom">Custom</label>
+                    <br><br>
+                    <b>Base layout with Arrows :</b>
+                    <div class="comment"><a id="tryLink" href="../layout.html" target="_blank">Try it first here</a> then copy this link in the browser source in OBS.</div>
+                    <input type="text" value="./layout.html">
+                    <br><br>
+                    <b>Base layout with Left Stick :</b>
+                    <div class="comment"><a id="tryLink" href="../layout.html?l=a0-&u=a1-&r=a0&d=a1" target="_blank">Try it first here</a> then copy this link in the browser source in OBS.</div>
+                    <input type="text" value="./layout.html?l=a0-&u=a1-&r=a0&d=a1">
+                </div>
+
+                <input id="custom" type="radio" name="controllerType" hidden>
+                <div>
+                    <label for="PS4">PS4 Controller</label> |
+                    <label for="custom"><b>Custom</b></label>
+
+                    <div class="comment">Assign your keys here then click "Generate". If the controller doesn't work, try to do what's written below in "Having an issue ?".</div>
+                    <table>
+                        <tr>
+                            <td><img class="left" src="./img/arrow.png" alt="Left"></td>
+                            <td><img class="up" src="./img/arrow.png" alt="Up"></td>
+                            <td><img class="right" src="./img/arrow.png" alt="Right"></td>
+                            <td><img class="down" src="./img/arrow.png" alt="Down"></td>
+                            <td><img src="./img/sp.png" alt="Jab"></td>
+                            <td><img src="./img/mp.png" alt="Strong"></td>
+                            <td><img src="./img/hp.png" alt="Fierce"></td>
+                            <td><img src="./img/sk.png" alt="Short"></td>
+                            <td><img src="./img/mk.png" alt="Forward"></td>
+                            <td><img src="./img/hk.png" alt="Roundhouse"></td>
+                            <td><img src="./img/sp.png" alt="Triple Punch"><img src="./img/mp.png" alt="Triple Punch"><img src="./img/hp.png" alt="Triple Punch"></td>
+                            <td><img src="./img/sk.png" alt="Triple Kick"><img src="./img/mk.png" alt="Triple Kick"><img src="./img/hk.png" alt="Triple Kick"></td>
+                        </tr>
+                        <tr>
+                            <td id="input0key">...</td>
+                            <td id="input1key">...</td>
+                            <td id="input2key">...</td>
+                            <td id="input3key">...</td>
+                            <td id="input4key">...</td>
+                            <td id="input5key">...</td>
+                            <td id="input6key">...</td>
+                            <td id="input7key">...</td>
+                            <td id="input8key">...</td>
+                            <td id="input9key">...</td>
+                            <td id="input10key">...</td>
+                            <td id="input11key">...</td>
+                        </tr>
+                        <tr id="assign-btns">
+                            <td id="input0" onclick="setInput(0)">Set</td>
+                            <td id="input1" onclick="setInput(1)">Set</td>
+                            <td id="input2" onclick="setInput(2)">Set</td>
+                            <td id="input3" onclick="setInput(3)">Set</td>
+                            <td id="input4" onclick="setInput(4)">Set</td>
+                            <td id="input5" onclick="setInput(5)">Set</td>
+                            <td id="input6" onclick="setInput(6)">Set</td>
+                            <td id="input7" onclick="setInput(7)">Set</td>
+                            <td id="input8" onclick="setInput(8)">Set</td>
+                            <td id="input9" onclick="setInput(9)">Set</td>
+                            <td id="input10" onclick="setInput(10)">Set</td>
+                            <td id="input11" onclick="setInput(11)">Set</td>
+                        </tr>
+                    </table>
+
+                    <div id="generateBtn" onclick="generateLink()">Generate Link</div>
+
+                    <div id="generatedLinkDiv" hidden>
+                        <div class="comment"><a id="tryLink" href="#" target="_blank">Try it first here</a> then copy this link in the browser source in OBS.</div>
+                        <input id="generatedLink" type="text" value="./layout.html">
+                    </div>
+                </div>
+            </div>
+
+            <h2>Description</h2>
+            <p>Display your inputs history live on your stream, like on the training mode but all the time.<br/> Viewers will be able to see it so they can understand how to do some techniques more easily (for example, Kage's instant cross-up EX Air Tastu or playing charge characters).</p>
+
+            <h2>How to set it up</h2>
+            <p>On OBS, add a new browser source and copy the link generated. I recommend at least 200px wide.</p>
+            <p>If you wish to try it first before integrating it to OBS, just open the link directly on your browser and try it with your controller.</p>
+
+            <h2>Some more informations</h2>
+            <p>As I can't optimize it for every controllers, if you don't use a PS4 controller, you can customize the commands then generate a link.</p>
+            <p>There's no tracker or anything on this application. Everything is done locally on your computer, no data is sent anywhere. No cookie or anything is used, the parameters are set through the link generated</p>
+
+            <h2>Having an issue or a suggestion ?</h2>
+            <p>For now, only the controller which is considered the first one connected will work, so, if it doesn't work and you have multiple controllers connected, unplug them all, refresh your scene on OBS then plug your controller.</p>
+            <p>You can send an email at this address for any question or suggestion :</p>
+
+            <h2>One last thing...</h2>
+            <p>Hosting this service is unfortunately not free so, if you wish to help or just to thank me, you can donate here :</p>
+
+            <p>Thank you and have fun streaming !</p>
+
+        </main>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    overflow: hidden;
+}
+
+inputs {
+    height: 100vh;
+}
+
+in {
+    display: block;
+    margin-bottom: 10px;
+}
+
+in > * {
+    display: inline-block;
+}
+
+move {
+    height: 28px;
+    width: 28px;
+    margin-right: 8px;
+
+    background-image: url("./img/arrow.png");
+    background-size: cover;
+}
+
+.right {
+    transform: rotate(-90deg);
+}
+
+.down.right {
+    transform: rotate(-45deg);
+}
+
+.down {
+    transform: rotate(0);
+}
+
+.down.left {
+    transform: rotate(45deg);
+}
+
+.left {
+    transform: rotate(90deg);
+}
+
+.up.left {
+    transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(180deg);
+}
+
+.up.right {
+    transform: rotate(-135deg);
+}
+
+hit {
+    margin: 2px 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 100rem;
+}
+
+.sp {
+    height: 24px;
+    width: 24px;
+    margin: 2px 0;
+
+    background-image: url("./img/sp.png");
+    background-size: cover;
+}
+
+.sk {
+    height: 24px;
+    width: 24px;
+    margin: 2px 0;
+
+    background-image: url("./img/sk.png");
+    background-size: cover;
+}
+
+.mp {
+    height: 24px;
+    width: 24px;
+    margin: 2px 0;
+
+    background-image: url("./img/mp.png");
+    background-size: cover;
+}
+
+.mk {
+    height: 24px;
+    width: 24px;
+    margin: 2px 0;
+
+    background-image: url("./img/mk.png");
+    background-size: cover;
+}
+
+.hp {
+    height: 24px;
+    width: 24px;
+    margin: 2px 0;
+
+    background-image: url("./img/hp.png");
+    background-size: cover;
+}
+
+.hk {
+    height: 24px;
+    width: 24px;
+    margin: 2px 0;
+
+    background-image: url("./img/hk.png");
+    background-size: cover;
+}
